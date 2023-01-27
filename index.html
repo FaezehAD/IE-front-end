@@ -11,27 +11,21 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <div class="menu-items">
-                    <li><a href="#">01 START</a></li>
-                    <li><a href="#">02 COURSE LECTURES</a></li>
-                    <li><a href="#">03 RELATED BOOKS</a></li>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <header>
+   
+    <ul class="navbar" id="navbar">
+        <li><a href="#header">01 START</a></li>
+        <li><a href="#lectures">02 COURSE LECTURES</a></li>
+        <li><a href="#related-books">03 RELATED BOOKS</a></li>
+        <a class="close" href="#">
+          <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+        </a>
+      </ul>
+      <a class="hamburger" href="#navbar">
+        <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+      </a>
+    
+    <header id="header">
         <img src="images/Header.jpg" alt="">
-        <!-- <main> </main> -->
 
         <div class="text-on-photo">
             <p>INTERNET</p>
@@ -40,7 +34,7 @@
             <p>IS WHAT WE ARE GOING TO</p>
             <p> LEARN IN THIS COUSRE</p>
         </div>
-        <a href="">
+        <a href="#related-books">
             SEE THIS COURSE RELATED BOOKS
         </a>
 
@@ -76,29 +70,133 @@
         </article>
     </section>
 
+
     <section id="related-books">
-        <h1>MOST POPULAR BOOKS</h1>
-        <article>
-            <div class="card">
+        <div id="title">
+            <h1>
+                <p class="effect-underline"> MOST POPULAR BOOKS</p>
+            </h1>
+        </div>
+
+        <div id="content">
+            <article>
                 <div class="content">
-                  <div class="front">
-                    Front
-                  </div>
-                  <div class="back">
-                    Back!
-                  </div>
+                    <div class="front">
+                        <img src="images/Book1-2.png" alt="">
+                        <p>By David Fianagan</p>
+                        <p>Seventh Edition</p>
+                        <p>published at 2020</p>
+                    </div>
+                    <div class="back">
+                        <p>Price: $23.99</p>
+                        <label for="modal-1">BUY NOW</label>
+                    </div>
                 </div>
-              </div>
-        </article>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="front">
+                        <img src="images/Book2-2.jpg" alt="">
+                        <p>By Robin Wieruch</p>
+                        <p>2022 Edition</p>
+                        <p>published at 2022</p>
+                    </div>
+                    <div class="back">
+                        <p>Price: $19.58</p>
+                        <label for="modal-2">BUY NOW</label>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="front">
+                        <img src="images/Book3-2.png" alt="">
+                        <p>By Caleb Doxsey</p>
+                        <p>First Edition</p>
+                        <p>published at 2016</p>
+                    </div>
+                    <div class="back">
+                        <p>Price: €22.11</p>
+                        <label for="modal-3">BUY NOW</label>
+                    </div>
+                </div>
+            </article>
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal">
+                <label class="modal__bg" for="modal-1"></label>
+                <div class="modal__inner">
+                    <label class="modal__close" for="modal-1"></label>
+                    <img src="images/Book1-1.jpg" alt="">
+                    <main>
+                        <h1>START READING NOW</h1>
+                        <p id="note">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</p>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quam tempora
+                                quidem, fuga porro velit. Nostrum quas mollitia soluta, temporibus distinctio pariatur
+                                natus quaerat! Id dicta totam nam quisquam expedita reprehenderit, veritatis deserunt
+                                dolores minus ex soluta sed. Assumenda harum vel iusto quis nostrum possimus veritatis
+                                quibusdam est dolores rerum, molestias odio tenetur dolore autem dolorum! Similique
+                                inventore dolorum numquam voluptatem et voluptate quo quos itaque ex autem, veniam nisi
+                                provident rerum beatae ducimus.
+                            </p>
+                        </div>
+                        <a href="https://www.amazon.com/gp/product/1491952024/" target="_blank">BUY NOW</a>
+                    </main>
+                </div>
+            </div>
+            <input class="modal-state" id="modal-2" type="checkbox" />
+            <div class="modal">
+                <label class="modal__bg" for="modal-2"></label>
+                <div class="modal__inner">
+                    <label class="modal__close" for="modal-2"></label>
+                    <img src="images/Book2-1.jpg" alt="">
+                    <main>
+                        <h1>START READING NOW</h1>
+                        <p id="note">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</p>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quam tempora
+                                quidem, fuga porro velit. Nostrum quas mollitia soluta, temporibus distinctio pariatur
+                                natus quaerat! Id dicta totam nam quisquam expedita reprehenderit, veritatis deserunt
+                                dolores minus ex soluta sed. Assumenda harum vel iusto quis nostrum possimus veritatis
+                                quibusdam est dolores rerum, molestias odio tenetur dolore autem dolorum! Similique
+                                inventore dolorum numquam voluptatem et voluptate quo quos itaque ex autem, veniam nisi
+                                provident rerum beatae ducimus.
+                            </p>
+                        </div>
+                        <a href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1"
+                            target="_blank">BUY NOW</a>
+                    </main>
+                </div>
+            </div>
+            <input class="modal-state" id="modal-3" type="checkbox" />
+            <div class="modal">
+                <label class="modal__bg" for="modal-3"></label>
+                <div class="modal__inner">
+                    <label class="modal__close" for="modal-3"></label>
+                    <img src="images/Book3-1.jpg" alt="">
+                    <main>
+                        <h1>START READING NOW</h1>
+                        <p id="note">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</p>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quam tempora
+                                quidem, fuga porro velit. Nostrum quas mollitia soluta, temporibus distinctio pariatur
+                                natus quaerat! Id dicta totam nam quisquam expedita reprehenderit, veritatis deserunt
+                                dolores minus ex soluta sed. Assumenda harum vel iusto quis nostrum possimus veritatis
+                                quibusdam est dolores rerum, molestias odio tenetur dolore autem dolorum! Similique
+                                inventore dolorum numquam voluptatem et voluptate quo quos itaque ex autem, veniam nisi
+                                provident rerum beatae ducimus.
+                            </p>
+                        </div>
+                        <a href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21"
+                            target="_blank">BUY NOW</a>
+                    </main>
+                </div>
+            </div>
 
-        <article>
-            2
-        </article>
-
-        <article>
-            3
-        </article>
-
+        </div>
     </section>
 
     <footer>
